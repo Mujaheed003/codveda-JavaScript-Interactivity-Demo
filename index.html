@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Interactivity Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar with Dropdown -->
+    <header>
+      <nav class="navbar">
+        <h1 class="logo">Codveda</h1>
+        <div class="dropdown">
+          <button id="dropdownBtn">Menu</button>
+          <ul id="dropdownMenu" class="dropdown-content">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Modal Section -->
+    <section class="modal-section">
+      <h2>Modal Example</h2>
+      <button id="openModalBtn" class="btn">Open Modal</button>
+
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span id="closeModalBtn" class="close">&times;</span>
+          <h3>Welcome!</h3>
+          <p>This is a simple modal popup using JavaScript.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="form-section">
+      <h2>Contact Form</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" />
+        <input type="email" id="email" placeholder="Your Email" />
+        <textarea id="message" placeholder="Your Message" rows="4"></textarea>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+      <p id="formMessage"></p>
+
+      <!-- Success Popup -->
+      <div id="successPopup" class="success-popup">
+        Message sent successfully!
+      </div>
+      <!-- Success Popup -->
+      <div id="errorPopup" class="error-popup">
+        Please fill out all fields! or<br />
+        Please enter a valid email!
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
