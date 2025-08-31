@@ -76,6 +76,6 @@ form.addEventListener("submit", (e) => {
       setTimeout(() => {
         successPopup.style.display = "none";
       }, 700);
-    }, 30000);
+    }, 3000);
   }
 });
