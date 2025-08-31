@@ -28,6 +28,7 @@ window.addEventListener("click", (e) => {
 
 // Form validation
 const form = document.getElementById("contactForm");
+const formMessage = document.getElementById("formMessage");
 const successPopup = document.getElementById("successPopup");
 const errorPopup = document.getElementById("errorPopup");
 
